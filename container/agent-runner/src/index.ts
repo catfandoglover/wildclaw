@@ -409,6 +409,8 @@ async function runQuery(
         'NotebookEdit',
         'mcp__nanoclaw__*',
         'mcp__gmail__*',
+        'mcp__gmail_lightning__*',
+        'mcp__gmail_charitable__*',
       ],
       env: sdkEnv,
       permissionMode: 'bypassPermissions',
@@ -427,6 +429,17 @@ async function runQuery(
         gmail: {
           command: 'npx',
           args: ['-y', '@gongrzhe/server-gmail-autoauth-mcp'],
+          env: { HOME: '/home/node/gmail-midwestlfg' },
+        },
+        gmail_lightning: {
+          command: 'npx',
+          args: ['-y', '@gongrzhe/server-gmail-autoauth-mcp'],
+          env: { HOME: '/home/node/gmail-lightning' },
+        },
+        gmail_charitable: {
+          command: 'npx',
+          args: ['-y', '@gongrzhe/server-gmail-autoauth-mcp'],
+          env: { HOME: '/home/node/gmail-charitable' },
         },
       },
       hooks: {

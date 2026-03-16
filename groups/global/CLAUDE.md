@@ -30,34 +30,87 @@ Can discuss Nietzsche, Augustine, Montessori, I Ching, Torah, classical liberal 
 - Communication style: authentic, direct, conversational. Shorter sentences. Casual transitions. NEVER sounds like AI.
 
 ### Family
-- *Sam* — wife, partner in everything. Sees all Wildclaw channels. Treat her as co-principal, not a secondary user.
-- *Hellie* (Helena) — daughter, born May 8, 2024. Track milestones, pediatrician visits, sleep patterns when shared.
+- *Sam* — wife, CEO of JCYS (Jewish Council for Youth Services) in Ravenswood. Partner in everything. Sees all Wildclaw channels. Treat her as co-principal, not a secondary user.
+  - Accounts: Citi CC, Amex CC, Amex personal loan, US Bank checking + CC
+  - OBGYN: Dr. Plawer, Evanston
+- *Hellie* (Helena) — daughter, born May 8, 2024
+  - School: JCYS Ravenswood (where Sam is CEO)
+  - Pediatrician: Dr. Kate Messing, North Suburban Pediatrics (cell: 419-356-6745)
+  - 529 plan: Brightstart (login in Keeper)
+  - Potty training started March 21, 2026
 - *Claude* — dog (yes, named Claude). Gotcha day: February 1, 2024. A golden retriever who is very good.
+- *Alex's brothers* — both in Israel. Their 2005 Toyota Highlander is parked at Alex's, insured by parents.
 
 ### Career & Ventures
 - *Lightning Learning Studios* — primary company. AI-powered classical education (Readiverse, Mithril). COO transitioning to CEO.
 - *Midwest LFG* — personal brand / consulting. Email: alex@midwestlfg.com
 - Previous ventures: multiple startups, deep in EdTech and AI intersection.
 - GitHub org: readiverse-haven
+- Pays for Claude Code personally (not through Lightning — independence)
+
+### Board Memberships & Community
+- *Canal Shores* — board member (golf course)
+- *Sketchpad* — board member
+- *Chabad of Evanston* — board member, synagogue
+- Italian speaker, annual Italy travel goal. Dream: buy property in Pesaro.
 
 ### Financial Overview
-Track across 15+ accounts:
-- Chase: checking, 2 credit cards, mortgage
+
+*Alex's accounts:*
+- Chase: checking, 2 credit cards
+- Chase mortgage (joint): refinancing — locked in, waiting to close. 27→20 years, +$500/mo, ~0.5% rate decrease
 - Amex: 2 credit cards, personal loan
+- Citi: 2 credit cards
 - Robinhood: IRA + brokerage
 - Coinbase: crypto
-- Empower: 401k + Sam's retirement
+- Empower: 401k
 - New York Life: all insurance policies
-- US Bank: Sam's checking + credit card
-- Citi: 2 cards
-- Lightstream, CareCredit: loans
+- Lightstream: loan
+- CareCredit: balance
 
-### Health Goals
-- Oura Ring for sleep/readiness tracking
-- Function Health for labs
-- Wants consistent exercise routine (struggles with consistency)
+*Sam's accounts:*
+- US Bank: checking + credit card
+- Citi: credit card
+- Amex: credit card + personal loan
+- Empower: retirement
+
+*Joint / Family:*
+- Brightstart 529 for Hellie
+- Property tax: Evanston, ~$18k owed. April 1 deadline ($11.5k). Plan: tax refund covers overdue, payment plan for rest (0.75%/mo interest).
+
+*Utilities (logins in Keeper):*
+- Nicor Gas, ComEd Electric, Comcast Internet
+
+*Taxes:* QuickBooks
+
+### Insurance (Transitioning April 1, 2026)
+- Health: currently Aetna → new carrier TBD April 1
+- Dental: Dr. Scott Emalfarb → new carrier TBD April 1
+- Vision: eye doctor on Main St, Evanston (across from Dave's Rock Shop) → new carrier TBD April 1
+- HSA (mostly depleted) → FSA only after April 1
+- Auto (2015 Jeep Patriot): paid by Sam's parents
+- Auto (2005 Toyota Highlander): paid by Alex's parents
+- NO WILL OR ESTATE PLAN — this is urgent. New parents with a child and assets. Nag until done.
+
+### Health
+- *Primary care:* OneMedical
+- *Pharmacy:* Walgreens, Green Bay Rd & Simpson, Evanston
+- *Tracking:* Oura Ring (sleep/readiness), Function Health (labs), STRONG app (lifting)
+- Wants consistent exercise routine — struggles with consistency
 - Evening routine is a mess — needs structure
-- Connect sleep quality to work performance
+- Both Alex + Sam: LA Fitness memberships (grandfathered rate) + Tivity Fitness through Blue 365 ($19.99/mo for both)
+
+### Travel & Loyalty
+- American Airlines: Alex 89MER02, Sam 66B1FJ4 (need to create Hellie's account)
+- United: Alex HKY44044
+- Marriott Bonvoy: 132516449 — ~15 nights from Lifetime Platinum. TRACK AND STRATEGIZE.
+- 2 cars: 2015 Jeep Patriot (theirs), 2005 Toyota Highlander (brothers')
+- Future: bigger car if second child, preferably electric
+
+### Charitable Giving
+- Google Sheet: https://docs.google.com/spreadsheets/d/1mD6I-e-8Q7DGs5GMPqi9RwAWGlnsMi2nEc7hCyaIwhY/edit?gid=1653741857#gid=1653741857
+- Managed through jakubowskicharitable@gmail.com
+- Track against annual goals in monthly deep dive
 
 ### Values
 - Classical education matters. Montessori principles. Great books.
@@ -65,6 +118,7 @@ Track across 15+ accounts:
 - Charitable giving is important — track against annual goals.
 - Authenticity over performance. Real conversations over polished ones.
 - Building things that matter > chasing metrics.
+- Jewish faith and community (Chabad of Evanston)
 
 ### Key Relationships
 - *Bobby George* — business partner / close collaborator at Lightning
@@ -77,6 +131,12 @@ Track across 15+ accounts:
 - alex@lightningstudios.ai (work — primary)
 - alex@midwestlfg.com (personal / consulting)
 - jakubowskicharitable@gmail.com (family / charitable)
+
+### Critical Deadlines
+- April 1, 2026: New health/dental/vision insurance starts
+- April 1, 2026: Property tax $11.5k due (0.75%/mo interest if late)
+- Mortgage refi: locked in, waiting to close
+- Will/estate plan: ASAP — nag until scheduled
 
 ## Communication Style
 
