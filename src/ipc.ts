@@ -3,11 +3,23 @@ import path from 'path';
 
 import { CronExpressionParser } from 'cron-parser';
 
-import { DATA_DIR, IPC_POLL_INTERVAL, TELEGRAM_BOT_POOL, TIMEZONE } from './config.js';
+import {
+  DATA_DIR,
+  IPC_POLL_INTERVAL,
+  TELEGRAM_BOT_POOL,
+  TIMEZONE,
+} from './config.js';
 import { sendPoolMessage } from './channels/telegram.js';
 import { AvailableGroup } from './container-runner.js';
 import { createTask, deleteTask, getTaskById, updateTask } from './db.js';
 import { isValidGroupFolder } from './group-folder.js';
+
+// X integration lives outside src/ rootDir — use fully dynamic import to avoid TS rootDir check
+let handleXIpc: ((data: any, sourceGroup: string, isMain: boolean, dataDir: string) => Promise<boolean>) | null = null;
+const xModPath = new URL('../.claude/skills/x-integration/host.js', import.meta.url).href;
+import(/* @vite-ignore */ xModPath)
+  .then((mod) => { handleXIpc = mod.handleXIpc; })
+  .catch(() => { /* X integration not installed */ });
 import { logger } from './logger.js';
 import { RegisteredGroup } from './types.js';
 
@@ -464,7 +476,13 @@ export async function processTaskIpc(
       }
       break;
 
-    default:
-      logger.warn({ type: data.type }, 'Unknown IPC task type');
+    default: {
+      const handled = handleXIpc
+        ? await handleXIpc(data, sourceGroup, isMain, DATA_DIR)
+        : false;
+      if (!handled) {
+        logger.warn({ type: data.type }, 'Unknown IPC task type');
+      }
+    }
   }
 }

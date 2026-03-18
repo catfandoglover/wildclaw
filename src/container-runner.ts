@@ -182,6 +182,16 @@ function buildVolumeMounts(
     }
   }
 
+  // Google Calendar MCP tokens
+  const calendarTokenDir = path.join(homeDir, '.config', 'google-calendar-mcp');
+  if (fs.existsSync(calendarTokenDir)) {
+    mounts.push({
+      hostPath: calendarTokenDir,
+      containerPath: '/home/node/.config/google-calendar-mcp',
+      readonly: false, // MCP may need to refresh tokens
+    });
+  }
+
   // Per-group IPC namespace: each group gets its own IPC directory
   // This prevents cross-group privilege escalation via IPC
   const groupIpcDir = resolveGroupIpcPath(group.folder);
