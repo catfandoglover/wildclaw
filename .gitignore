@@ -13,10 +13,13 @@ logs/
 groups/*
 !groups/main/
 !groups/global/
+!groups/wildclaw-family/
 groups/main/*
 groups/global/*
+groups/wildclaw-family/*
 !groups/main/CLAUDE.md
 !groups/global/CLAUDE.md
+!groups/wildclaw-family/CLAUDE.md
 
 # Secrets
 *.keys.json

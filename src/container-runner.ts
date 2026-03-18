@@ -4,6 +4,7 @@
  */
 import { ChildProcess, exec, spawn } from 'child_process';
 import fs from 'fs';
+import os from 'os';
 import path from 'path';
 
 import {
@@ -162,6 +163,34 @@ function buildVolumeMounts(
     containerPath: '/home/node/.claude',
     readonly: false,
   });
+
+  // Gmail credentials directories (one per account, for Gmail MCP inside the container)
+  const homeDir = os.homedir();
+  const gmailAccounts = [
+    { hostDir: '.gmail-mcp', containerDir: 'gmail-midwestlfg' },
+    { hostDir: '.gmail-mcp-lightning', containerDir: 'gmail-lightning' },
+    { hostDir: '.gmail-mcp-charitable', containerDir: 'gmail-charitable' },
+  ];
+  for (const acct of gmailAccounts) {
+    const gmailDir = path.join(homeDir, acct.hostDir);
+    if (fs.existsSync(gmailDir)) {
+      mounts.push({
+        hostPath: gmailDir,
+        containerPath: `/home/node/${acct.containerDir}/.gmail-mcp`,
+        readonly: false, // MCP may need to refresh OAuth tokens
+      });
+    }
+  }
+
+  // Google Calendar MCP tokens
+  const calendarTokenDir = path.join(homeDir, '.config', 'google-calendar-mcp');
+  if (fs.existsSync(calendarTokenDir)) {
+    mounts.push({
+      hostPath: calendarTokenDir,
+      containerPath: '/home/node/.config/google-calendar-mcp',
+      readonly: false, // MCP may need to refresh tokens
+    });
+  }
 
   // Per-group IPC namespace: each group gets its own IPC directory
   // This prevents cross-group privilege escalation via IPC

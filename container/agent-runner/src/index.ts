@@ -408,7 +408,11 @@ async function runQuery(
         'TodoWrite', 'ToolSearch', 'Skill',
         'NotebookEdit',
         'mcp__nanoclaw__*',
-        'mcp__ollama__*'
+        'mcp__ollama__*',
+        'mcp__gmail__*',
+        'mcp__gmail_lightning__*',
+        'mcp__gmail_charitable__*',
+        'mcp__google_calendar__*',
       ],
       env: sdkEnv,
       permissionMode: 'bypassPermissions',
@@ -427,6 +431,39 @@ async function runQuery(
         ollama: {
           command: 'node',
           args: [path.join(path.dirname(mcpServerPath), 'ollama-mcp-stdio.js')],
+          env: {},
+        },
+        gmail: {
+          command: 'npx',
+          args: ['-y', '@gongrzhe/server-gmail-autoauth-mcp'],
+          env: {
+            GMAIL_OAUTH_PATH: '/home/node/gmail-midwestlfg/.gmail-mcp/gcp-oauth.keys.json',
+            GMAIL_CREDENTIALS_PATH: '/home/node/gmail-midwestlfg/.gmail-mcp/credentials.json',
+          },
+        },
+        gmail_lightning: {
+          command: 'npx',
+          args: ['-y', '@gongrzhe/server-gmail-autoauth-mcp'],
+          env: {
+            GMAIL_OAUTH_PATH: '/home/node/gmail-lightning/.gmail-mcp/gcp-oauth.keys.json',
+            GMAIL_CREDENTIALS_PATH: '/home/node/gmail-lightning/.gmail-mcp/credentials.json',
+          },
+        },
+        gmail_charitable: {
+          command: 'npx',
+          args: ['-y', '@gongrzhe/server-gmail-autoauth-mcp'],
+          env: {
+            GMAIL_OAUTH_PATH: '/home/node/gmail-charitable/.gmail-mcp/gcp-oauth.keys.json',
+            GMAIL_CREDENTIALS_PATH: '/home/node/gmail-charitable/.gmail-mcp/credentials.json',
+          },
+        },
+        google_calendar: {
+          command: 'npx',
+          args: ['-y', '@cocal/google-calendar-mcp'],
+          env: {
+            GOOGLE_OAUTH_CREDENTIALS: '/home/node/gmail-midwestlfg/.gmail-mcp/gcp-oauth.keys.json',
+            XDG_CONFIG_HOME: '/home/node/.config',
+          },
         },
       },
       hooks: {
